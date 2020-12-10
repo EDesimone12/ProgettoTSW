@@ -1,0 +1,27 @@
+header{
+    position: relative;
+}
+body{
+    background-color: #3066be;
+}
+div#wrapper-admin{
+    position: relative;
+    min-height: 80%;
+    width: 100%;
+    word-break: break-word;
+}
+
+div#adminContainer{
+    position: absolute;
+    left: 5%;
+    width: 45%;
+    top: 5%;
+    bottom: 5%;
+    height: 90%;
+    background: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    width: 350px;
+    height: 300px;
+}

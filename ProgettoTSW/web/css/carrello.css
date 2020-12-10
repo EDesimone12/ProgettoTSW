@@ -1,0 +1,119 @@
+body{
+    background-image: url(../images/sfondo_carrello.jpg);
+    background-position: center;
+}
+p,h2{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+}
+
+
+div#carrelloBody{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.8;
+    margin: 5%;
+    min-height: 100px;
+    max-height: 500px;
+    min-width: 350px;  /* Per contenere il form all'interno del div*/
+    width: 60%;
+}
+div.carrelloProduct{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    background: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 90%;
+    word-break: break-word;
+}
+div.carrelloProductDivImg{
+    padding: 2%;
+}
+div.carrelloProductDivAbout{
+    padding: 2%;
+}
+div#procediPagamento{
+    position: relative;
+    margin: 5%;
+    background: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.8;
+    min-height: 45%;
+    min-width: 250px;
+}
+div#procediPagamentoFattura{
+    position: relative;
+    margin:5%;
+    padding: 5%;
+    overflow-y: scroll;
+    background: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    opacity: 0.8;
+    max-height: 45%;
+    height: 45%;
+    text-align: justify;
+}
+div#procediPagamentoFattura .procediPagamentoProduct{
+    position: relative;
+    margin: auto;
+}
+div#procediPagamentoFattura .procediPagamentoProductPrice{
+    position: relative;
+}
+
+div#procediPagamento #procediPagamentoTotale{
+    position: relative;
+    text-align: center;
+
+}
+div#procediPagamento form{
+    text-align: center;
+}
+
+div#procediPagamento #labelCarta{
+    position: relative;
+    text-align: center;
+}
+div#procediPagamento #procediPagamentoCarta{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+div#procediPagamento #procediPagamentoAcquisto{
+    position: relative;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 796px){ /*Schermo grande */
+    div#wrapper-carrello{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        min-height: 80%;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 795px) {    /* Schermo piccolo*/
+    div#wrapper-carrello{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 80%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,109 @@
+body{
+    background-image: url(../images/sfondo_registrazione.jpg);
+}
+header{
+    position: relative;
+}
+div.registrazione-wrapper{
+    position: relative;
+    min-height: 80%;
+    text-align: center;
+}
+@media screen and (min-width: 796px) {    /*Schermo grande */
+    div.registrazione{
+        background-image:url(../images/sfondo_cellulare_registrazione.jpg);
+        border-radius: 10px;
+        border: 5px solid black;
+        position: absolute;
+        min-height: 300px;
+        max-height: 300px;
+        left: 8%;
+        top: 13%;
+    }
+    div.registrazione input[type=text] ,.registrazione input[type=password] {
+        background-color: white !important;
+    }
+    div.registrazione input[type=submit]{
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+    }
+    div.registrazione form {
+        color: aquamarine;
+        text-shadow:
+                3px  3px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px  1px 0 #000,
+                1px  1px 0 #000;
+    }
+    /* Regole registrazione */
+    div.outputJquery{
+        position: absolute;
+        top: 13%;
+        right: 10%;
+        background: white;
+        border: 5px solid black;
+        border-radius: 20px;
+        opacity: 0.8;
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 46%;
+        max-width: 46%;
+    }
+    div.outputJquery p{
+        padding-left: 2%;
+        line-height: 155%;
+
+    }
+}
+
+@media screen and (max-width: 795px) {    /*Schermo piccolo */
+    div.registrazione{
+        background-image:url(../images/sfondo_cellulare_registrazione.jpg);
+        position: relative;
+        border-radius: 10px;
+        border: 5px solid black;
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 200px;
+        max-width: 200px;
+        margin-left: 30%;
+        margin-right: 25%;
+    }
+    div.registrazione input[type=text] ,.registrazione input[type=password] {
+        background-color: white !important;
+    }
+    div.registrazione input[type=submit]{
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+    }
+    div.registrazione form {
+        color: aquamarine;
+        text-shadow:
+                3px  3px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px  1px 0 #000,
+                1px  1px 0 #000;
+    }
+    /* Regole registrazione */
+    div.outputJquery{
+        position: relative;
+        background: white;
+        border: 5px solid black;
+        border-radius: 20px;
+        opacity: 0.8;
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 20%;
+    }
+    div.outputJquery p{
+        padding-left: 2%;
+        line-height: 155%;
+
+    }
+}
+
+

@@ -1,0 +1,105 @@
+header{
+    position: relative;
+}
+body{
+    background-image: url(../images/sfondo_registrazione.jpg);
+    background-position: center;
+}
+.adminRemoveFotoButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 795px){ /* Schermo piccolo*/
+    div#mainPicture{
+        display: none;
+    }
+    form#aggiunfiFotoForm{
+        text-align: center;
+        width: 100%;
+    }
+    div#picturesContainer{
+        position: relative;
+        text-align: center;
+        background: white;
+        border: 5px solid black;
+        padding: 3%;
+        border-radius: 20px;
+        max-height: 70%;
+        overflow-y: scroll;
+    }
+    div#picturesContainer .pictureButton{
+        position: relative;
+        padding: 5px;
+        margin: 1%;
+        border: none;
+        border-radius: 0;
+    }
+}
+@media screen and (min-width: 796px){
+    div#wrapper-galleria {
+        position: relative;
+        min-height: 80%;
+        width: 100%;
+    }
+
+    div#mainPicture{
+        position: absolute;
+        left: 5%;
+        width: 45%;
+        top: 7%;
+        bottom: 5%;
+        height: 90%;
+        background: white;
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+    div#mainPicture #mainPictureMedia{
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        height: 90%;
+        width: 90%;
+    }
+    #adminAddFotoButton{
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+    div#picturesContainer{
+        position: absolute;
+        right: 5%;
+        width: 38.5%;
+        top: 7%;
+        bottom: 5%;
+        height: 86%;
+        padding-top: 1.5%;
+        padding-left: 1.5%;
+        background: white;
+        border: 5px solid black;
+        border-radius: 20px;
+        overflow-y: scroll;
+        opacity: 0.8;
+    }
+    div#picturesContainer .pictureButton{
+        position: relative;
+        padding: 5px;
+        margin: 1%;
+        border: none;
+        border-radius: 0;
+    }
+    form.removeForm{
+        display: inline;
+        width: 0;
+        height: 0;
+    }
+
+    div#picturesContainer .pictureMedia{
+
+        width: 128px;
+        height: 128px;
+    }
+}
+
+
